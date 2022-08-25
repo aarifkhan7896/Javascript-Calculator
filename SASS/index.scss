@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: whitesmoke;
+  color: #fff;
+}
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .calc {
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3),
+      -1px -1px 0px 0px rgba(0, 0, 0, 0.3);
+    width: 30rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: #242424;
+
+    .number {
+      color: #fff;
+      font-weight: 400;
+    }
+
+    #result {
+      background-color: orange;
+      color: #fff;
+      border-radius: 50%;
+      padding: 2rem 2.2rem;
+    }
+
+    input {
+      width: 100%;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      font-size: 3.2rem;
+      padding: 3rem 0.5rem;
+      color: #fff;
+    }
+    button {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      font-size: 1.8rem;
+      box-shadow: -2px -2px 3px 0px rgba(0, 0, 0, 0.3);
+      padding: 1rem 2.2rem;
+      margin: 0.7rem;
+      cursor: pointer;
+      border-radius: 0.5rem;
+      color: orange;
+      font-weight: bold;
+
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.404);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  html {
+    font-size: 25%;
+  }
+}
